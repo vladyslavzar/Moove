@@ -1,0 +1,790 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  font-family: "Apercu Pro";
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+body {
+  background-color: #0F1011;
+}
+
+h1 {
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.75);
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 60px;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 40px;
+}
+
+h4 {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 25px;
+}
+
+h5 {
+  font-size: 20px;
+  line-height: 20px;
+}
+
+p {
+  font-weight: normal;
+  font-size: 22px;
+}
+
+button {
+  background-color: #1C1D1E;
+  border: 1px solid #B5B7B7;
+  height: 50px;
+  width: 200px;
+  transition: 0.3s;
+  opacity: 30%;
+  display: flex;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 50px;
+  color: #FFFFFF;
+  align-items: center;
+  justify-content: center;
+}
+button img {
+  margin-right: 10px;
+}
+
+.btnactive {
+  opacity: 100%;
+}
+
+.line {
+  max-width: 80px;
+  height: 3px;
+  background: #fff;
+}
+
+.container {
+  max-width: 1430px;
+  padding: 0 15px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.header {
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+}
+.headercontainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.headercontainer nav {
+  display: flex;
+  max-width: 334px;
+  width: 100%;
+  justify-content: space-between;
+}
+.headercontainer nav a {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 17px;
+  padding-bottom: 6px;
+  transition: 0.3s;
+  border: solid 3px transparent;
+  color: #fff;
+}
+.headercontainer nav a:hover {
+  border-bottom: #B5B7B7 solid 3px;
+}
+.headercontainer nav .headeractive {
+  border-bottom: #B5B7B7 solid 3px;
+}
+
+.banner {
+  width: 100%;
+  min-height: 838px;
+  background-image: url(../images/banner.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  margin-bottom: 77px;
+}
+.bannercontainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  min-height: 838px;
+  padding-bottom: 45px;
+}
+.bannercontainerlable {
+  display: flex;
+  text-align: right;
+  justify-content: space-between;
+  max-width: 560px;
+  width: 100%;
+}
+.bannercontainerlable a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 12px;
+  color: #fff;
+}
+.bannercontainerlable a img {
+  margin-bottom: 10px;
+}
+
+.trucks {
+  background-image: url(../images/truck_1.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  margin-bottom: 170px;
+}
+.truckscontainer {
+  min-height: 728px;
+  color: #fff;
+  padding-top: 289px;
+}
+.truckscontainer .line {
+  margin-top: 15px;
+  margin-bottom: 40px;
+}
+.truckscontainer p {
+  color: #B5B7B7;
+  line-height: 140%;
+}
+
+.safety {
+  background-image: url(../images/truck_2.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 50px;
+  /* Firefox 3.6+ */
+  /* Safari 3.1+ и Chrome 4.0+ */
+  /* Opera 9.6+ */
+  background-size: 100%;
+}
+.safetycontainer {
+  min-height: 1107px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 94px;
+  padding-bottom: 62px;
+}
+.safetycontainerbottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.freight {
+  margin-bottom: 85px;
+}
+.freightcontainer {
+  color: #fff;
+  min-height: 745px;
+  position: relative;
+}
+.freightcontainer .demap, .freightcontainer .ukmap {
+  position: absolute;
+  right: 0px;
+  top: 50px;
+  opacity: 100%;
+  transition: 0.3s;
+}
+.freightcontainer .imgnotselected {
+  opacity: 0%;
+}
+.freightcontainerflex {
+  padding-top: 195px;
+}
+.freightcontainerflex .line {
+  margin-top: 15px;
+  margin-bottom: 40px;
+}
+.freightcontainerflex p {
+  margin-bottom: 60px;
+}
+.freightcontainerflexcountries {
+  display: flex;
+  max-width: 400px;
+}
+.freightcontainerflexcountries .de {
+  border-radius: 5px 0px 0px 5px;
+}
+.freightcontainerflexcountries .uk {
+  border-radius: 0px 5px 5px 0px;
+}
+
+.how {
+  min-height: 1050px;
+  padding-top: 122px;
+  color: #fff;
+}
+.howcontainer {
+  position: relative;
+}
+.howcontainer::before {
+  bottom: 0;
+  position: absolute;
+  left: -130px;
+  content: "";
+  height: 708px;
+  width: 95px;
+  background-image: url(../images/arrows_km.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.howcontainer #trucks {
+  position: absolute;
+  right: 30px;
+  bottom: -19px;
+}
+.howcontainer .line {
+  margin-top: 15px;
+  margin-bottom: 40px;
+}
+.howcontainerlist {
+  min-height: 708px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.howcontainerlist .autonomous {
+  background: #3A3A33;
+}
+.howcontainerlist .autonomous::after {
+  background: #3A3A33;
+}
+.howcontainerlistitem {
+  background: #292929;
+  border-radius: 10px;
+  min-height: 125px;
+  max-width: 680px;
+  width: 100%;
+  color: #fff;
+  position: relative;
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+}
+.howcontainerlistitem::after {
+  content: "";
+  background: #292929;
+  position: absolute;
+  width: 713px;
+  height: 10px;
+  bottom: 0;
+  right: -700px;
+  border-radius: 10px;
+}
+.howcontainerlistitem h2 {
+  font-weight: bold;
+  font-size: 50px;
+  margin-right: 20px;
+  line-height: 125px;
+}
+.howcontainerlistitem span {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 140%;
+  color: #B5B7B7;
+}
+
+.advantages {
+  min-height: 1040px;
+  background-image: url(../images/truck_3.png);
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+.advantagescontainer {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 334px;
+}
+.advantagescontainersecond {
+  color: #fff;
+  max-width: 740px;
+  width: 100%;
+}
+.advantagescontainersecond .line {
+  margin-top: 15px;
+  margin-bottom: 40px;
+}
+.advantagescontainersecondflex {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.advantagescontainersecondflexrow {
+  min-height: 238px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.advantagescontainersecondflexrowitem {
+  display: flex;
+}
+.advantagescontainersecondflexrowitem img {
+  margin-right: 11px;
+}
+
+.board {
+  min-height: 1489px;
+  background: #1C1D1E;
+  padding-top: 122px;
+}
+.boardcontainer {
+  color: #fff;
+}
+.boardcontainer .line {
+  margin-top: 15px;
+  margin-bottom: 80px;
+}
+.boardcontainerlist {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.boardcontainerlistcol {
+  min-height: 1077px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  max-width: 440px;
+}
+.boardcontainerlistcolitem img {
+  max-width: 440px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.boardcontainerlistcolitem span {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 30px;
+  margin-bottom: 17px;
+}
+.boardcontainerlistcolitem p {
+  color: #B5B7B7;
+}
+
+.footer {
+  min-height: 110px;
+  display: flex;
+  align-items: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  color: #fff;
+}
+.footercontainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footercontainernav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 620px;
+  width: 100%;
+}
+.footercontainernavlist {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 342px;
+  width: 100%;
+}
+.footercontainernavlist a {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 17px;
+  padding-bottom: 6px;
+  transition: 0.3s;
+  border: solid 3px transparent;
+  color: #fff;
+}
+.footercontainernavlist a:hover {
+  border-bottom: #B5B7B7 solid 3px;
+}
+.footercontainernavlist .footeractive {
+  border-bottom: #B5B7B7 solid 3px;
+}
+.footercontainerrights {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 547px;
+  width: 100%;
+}
+.footercontainerrightsLTD {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 271px;
+  width: 100%;
+}
+
+@media screen and (max-width: 1300px) {
+  .trucks {
+    background-image: none;
+  }
+
+  .demap, .ukmap {
+    width: 600px;
+    top: 500px !important;
+    left: -100px;
+    z-index: -1;
+  }
+
+  .howcontainerlistitem::after {
+    display: none;
+  }
+
+  #trucks {
+    display: none;
+  }
+}
+@media screen and (max-width: 550px) {
+  .headercontainer {
+    flex-direction: column;
+    min-height: 100px;
+    justify-content: space-evenly;
+  }
+
+  .safetycontainerbottom {
+    flex-direction: column;
+    min-height: 400px;
+  }
+
+  .advantages {
+    background-position: top;
+  }
+  .advantages .advantagescontainersecondflex {
+    flex-direction: column;
+    min-height: 515px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  .boardcontainerlist {
+    flex-direction: column;
+    min-height: 1000px;
+  }
+  .boardcontainerlistcol {
+    min-height: 900px;
+  }
+
+  .footercontainer {
+    flex-direction: column;
+  }
+  .footercontainernav {
+    flex-direction: column;
+  }
+}
+.technology {
+  background-image: url(../images/tech.jpg);
+  background-size: cover;
+  background-position: bottom;
+  margin-bottom: 175px;
+}
+.technologycontainer {
+  padding-bottom: 104px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  min-height: 914px;
+  color: #fff;
+}
+
+.techlist {
+  position: relative;
+}
+.techlistcontainer article {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  min-height: 481px;
+  width: 100%;
+}
+.techlistcontainer article div .line {
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+.techlistcontainer article div p {
+  color: #B5B7B7;
+  line-height: 140%;
+}
+.techlistcontainer article img {
+  position: absolute;
+  top: 0;
+}
+.techlistcontainer .techlistcontainerleft img {
+  right: 0;
+}
+.techlistcontainer .techlistcontainerright {
+  justify-content: flex-end;
+}
+.techlistcontainer .techlistcontainerright img {
+  left: 0;
+}
+
+@media screen and (max-width: 1300px) {
+  .techlist img {
+    max-width: 500px;
+    top: 50% !important;
+    transform: translate(0, -50%);
+  }
+}
+@media screen and (max-width: 1000px) {
+  .techlist img {
+    max-width: 550px;
+    top: 500px !important;
+  }
+  .techlist p {
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .techlist .mediaresponsivef {
+    top: 600px !important;
+  }
+  .techlist .mediaresponsives {
+    top: 700px !important;
+  }
+}
+@media screen and (max-width: 560px) {
+  .techlist img {
+    max-width: 550px;
+    top: 500px !important;
+    display: none;
+  }
+  .techlist p {
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .techlist .mediaresponsivef {
+    top: 600px !important;
+  }
+  .techlist .mediaresponsives {
+    top: 700px !important;
+  }
+}
+.careers {
+  background-image: url(../images/career.jpg);
+  background-position: bottom;
+  background-size: cover;
+}
+.careerscontainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 891px;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-bottom: 67px;
+  color: #fff;
+  text-align: right;
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.75);
+}
+.careerscontainer h1 {
+  margin-bottom: 20px;
+  line-height: 60px;
+}
+
+.joinus {
+  background-color: #FFFFFF;
+  min-height: 1735px;
+  color: #0F1011;
+}
+.joinuscontainer {
+  padding-top: 154px;
+}
+.joinuscontainer h2 {
+  margin-bottom: 83px;
+}
+.joinuscontainerbtns {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1017px;
+  margin-bottom: 83px;
+}
+.joinuscontainerbtnsbtn {
+  background: #FFFFFF !important;
+  border: 1px solid #B5B7B7 !important;
+  border-radius: 5px !important;
+  width: 152px !important;
+  height: 44px !important;
+  color: #000000 !important;
+  text-align: center !important;
+  line-height: 44px !important;
+  font-weight: normal !important;
+  font-size: 20px !important;
+  line-height: 20px !important;
+  transition: 0.5s !important;
+  opacity: 100%;
+}
+.joinuscontainerbtnsbtn:hover {
+  background-color: #000000 !important;
+  color: #fff !important;
+  border: #000000 !important;
+  opacity: 100%;
+}
+.joinuscontainerlist {
+  display: flex;
+  width: 100%;
+}
+.joinuscontainerlistflex {
+  min-height: 1075px;
+  max-width: 680px;
+  width: 100%;
+  margin-right: 40px;
+}
+.joinuscontainerlistflexitem {
+  min-height: 90px;
+  max-width: 680px;
+  width: 100%;
+  border-bottom: solid #B5B7B7 1px;
+  margin-bottom: 32px;
+}
+.joinuscontainerlistflexitem h4 {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 25px;
+  margin-bottom: 15px;
+}
+.joinuscontainerlistflexitem h5 {
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.popup {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+}
+.popupcontainer {
+  min-height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.popupcontainer p, .popupcontainer a {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 140%;
+  color: #B5B7B7;
+}
+.popupcontainer a {
+  text-decoration: underline;
+}
+.popupcontainerbtns {
+  max-width: 293px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.popupcontainerbtns button {
+  border-radius: 5px;
+  width: 141px;
+  height: 40px;
+  opacity: 100%;
+  color: #000000;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 40px;
+  border: none !important;
+  transition: 0.3s;
+}
+
+.popupactive {
+  opacity: 0%;
+}
