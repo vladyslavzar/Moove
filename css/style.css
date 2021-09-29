@@ -747,6 +747,7 @@ button img {
 .popup {
   position: fixed;
   bottom: 0;
+  display: none !important;
   width: 100%;
   background-color: black;
 }
